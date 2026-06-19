@@ -9,12 +9,10 @@ Explainable AI (XAI) refers to a suite of processes, methods, and tools that mak
 
 These variants distinguish whether the explanation aims to demystify the model's overall logic or justify an individual prediction.
 
-*   **Global Explainability Examples**
-    *   *Concept:* Summarizes the overarching behavior of a model across the entire dataset.
-    *   *Example:* Creating a **Feature Importance Plot** for a random forest credit-scoring model. This shows stakeholders that "Debt-to-Income Ratio" and "Credit History Length" are universally the top two factors driving approval decisions across all applicants.
-*   **Local Explainability Examples**
-    *   *Concept:* Zooming into a singular data point to explain why the model made one specific decision.
-    *   *Example:* Generating a **Waterfall Chart** for a single rejected loan applicant. The chart proves that this specific user was denied solely because their personal "Recent Missed Payments" value overrode their otherwise healthy income metrics.
+| Type | Concept | Example | Year First Used | First Used Paper |
+| :--- | :--- | :--- | :--- | :--- |
+| **Global Explainability Examples** | Summarizes the overarching behavior of a model across the entire dataset. | Creating a **Feature Importance Plot** for a random forest credit-scoring model. This shows stakeholders that "Debt-to-Income Ratio" and "Credit History Length" are universally the top two factors driving approval decisions across all applicants. | 2001 | [Random Forests](https://link.springer.com/article/10.1023/A:1010933404324) |
+| **Local Explainability Examples** | Zooming into a singular data point to explain why the model made one specific decision. | Generating a **Waterfall Chart** for a single rejected loan applicant. The chart proves that this specific user was denied solely because their personal "Recent Missed Payments" value overrode their otherwise healthy income metrics. | 2016 | ["Why Should I Trust You?": Explaining the Predictions of Any Classifier (LIME)](https://arxiv.org/abs/1602.04938) |
 
 ---
 
@@ -22,14 +20,10 @@ These variants distinguish whether the explanation aims to demystify the model's
 
 These variants are categorized by whether the explanation tool is locked to a specific model type or can be applied universally.
 
-*   **Model-Specific (Intrinsic) Examples**
-    *   *Concept:* Relying on glass-box models that are inherently transparent due to their simple mathematical structure.
-    *   *Example 1:* A **Decision Tree diagram** used in medical diagnosis software, allowing a doctor to trace a patient's symptoms through a visible flowchart of IF-THEN rules to reach a conclusion.
-    *   *Example 2:* **Linear Regression Coefficients** in housing price forecasting, where a real estate agent can point out that every additional square foot mathematically adds exactly $150 to the final appraisal.
-*   **Model-Agnostic (Post-Hoc) Examples**
-    *   *Concept:* Applying external interpretability tools to complex "black-box" models (like Transformers or Deep Neural Networks) after training is complete.
-    *   *Example 1 (SHAP):* Using **Shapley Additive exPlanations** on an ensemble gradient-boosting model to see how much each feature pushes a prediction away from the baseline average.
-    *   *Example 2 (LIME):* Using **Local Interpretable Model-agnostic Explanations** to approximate a deep neural network's local decision boundary by creating perturbed, simplified models around a single prediction point.
+| Type | Concept | Examples | Year First Used | First Used Paper |
+| :--- | :--- | :--- | :--- | :--- |
+| **Model-Specific (Intrinsic) Examples** | Relying on glass-box models that are inherently transparent due to their simple mathematical structure. | 1. A **Decision Tree diagram** used in medical diagnosis software, allowing a doctor to trace a patient's symptoms through a visible flowchart of IF-THEN rules to reach a conclusion.<br>2. **Linear Regression Coefficients** in housing price forecasting, where a real estate agent can point out that every additional square foot mathematically adds exactly $150 to the final appraisal. | 1805 | [Nouvelles méthodes pour la détermination des orbites des comètes (Linear Regression)](https://books.google.com/books?id=yS4PAAAAQAAJ) |
+| **Model-Agnostic (Post-Hoc) Examples** | Applying external interpretability tools to complex "black-box" models (like Transformers or Deep Neural Networks) after training is complete. | 1. **SHAP (Shapley Additive exPlanations)** on an ensemble gradient-boosting model to see how much each feature pushes a prediction away from the baseline average.<br>2. **LIME (Local Interpretable Model-agnostic Explanations)** to approximate a deep neural network's local decision boundary by creating perturbed, simplified models around a single prediction point. | 2016 | ["Why Should I Trust You?": Explaining the Predictions of Any Classifier (LIME)](https://arxiv.org/abs/1602.04938) |
 
 ---
 
@@ -37,11 +31,7 @@ These variants are categorized by whether the explanation tool is locked to a sp
 
 These specialized tools are tailored to extract intuitive explanations from specific types of unstructured data.
 
-*   **Computer Vision (Image-Based) Examples**
-    *   *Concept:* Highlighting spatial regions within an image that triggered a neural network's classification.
-    *   *Example 1 (Grad-CAM):* **Gradient-weighted Class Activation Mapping** generates a thermal heatmap over a chest X-ray image, highlighting the exact lung tissue regions that caused the AI to diagnose pneumonia.
-    *   *Example 2 (Saliency Maps):* Highlighting specific pixels that an autonomous vehicle's object-detection system focused on to identify a pedestrian crossing the street.
-*   **Natural Language Processing (Text-Based) Examples**
-    *   *Concept:* Identifying key words or structural phrases that dictated an NLP model's final output.
-    *   *Example 1 (Attention Rollout):* Visualizing **Attention Weights** in a transformer-based customer feedback tool to highlight which adjectives (e.g., "frustrating", "broken") caused a support ticket to be flagged as high-priority negative sentiment.
-    *   *Example 2 (Counterfactual Explanations):* An automated resume-screening tool telling an applicant: "If your resume had contained the keyword 'Python' instead of 'General Programming', your profile would have passed the initial automated screening filter."
+| Type | Concept | Examples | Year First Used | First Used Paper |
+| :--- | :--- | :--- | :--- | :--- |
+| **Computer Vision (Image-Based) Examples** | Highlighting spatial regions within an image that triggered a neural network's classification. | 1. **Grad-CAM (Gradient-weighted Class Activation Mapping)** generates a thermal heatmap over a chest X-ray image, highlighting the exact lung tissue regions that caused the AI to diagnose pneumonia.<br>2. **Saliency Maps** highlighting specific pixels that an autonomous vehicle's object-detection system focused on to identify a pedestrian crossing the street. | 2013 | [Deep Inside Convolutional Networks: Visualising Image Classification Models and Saliency Maps](https://arxiv.org/abs/1312.6034) |
+| **Natural Language Processing (Text-Based) Examples** | Identifying key words or structural phrases that dictated an NLP model's final output. | 1. **Attention Rollout** visualizing **Attention Weights** in a transformer-based customer feedback tool to highlight which adjectives (e.g., "frustrating", "broken") caused a support ticket to be flagged as high-priority negative sentiment.<br>2. **Counterfactual Explanations** for an automated resume-screening tool telling an applicant: "If your resume had contained the keyword 'Python' instead of 'General Programming', your profile would have passed the initial automated screening filter." | 2017 | [Counterfactual Explanations Without Opening the Black Box: Automated Decisions and the GDPR](https://arxiv.org/abs/1711.00399) |
