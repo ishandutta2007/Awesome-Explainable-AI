@@ -1,5 +1,21 @@
-# Awesome-Explainable-AI
-## Explainable AI (XAI) Methods & Real-World Examples
+# 🌟 Awesome Explainable AI
+
+<p align="center">
+  <img src="assets/banner.svg" alt="Awesome Explainable AI Banner" width="100%">
+</p>
+
+<p align="center">
+  <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Explainable-AI/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Explainable-AI?style=flat-square" alt="Stars"/></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Explainable-AI/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Explainable-AI?style=flat-square" alt="Forks"/></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Explainable-AI/issues"><img src="https://img.shields.io/github/issues/ishandutta2007/Awesome-Explainable-AI?style=flat-square" alt="Issues"/></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Explainable-AI/blob/main/LICENSE"><img src="https://img.shields.io/github/license/ishandutta2007/Awesome-Explainable-AI?style=flat-square" alt="License"/></a>
+  <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
+</p>
+
+---
+
+## 📖 Explainable AI (XAI) Methods & Real-World Examples
 
 Explainable AI (XAI) refers to a suite of processes, methods, and tools that make the outputs of machine learning algorithms understandable, transparent, and trustworthy to human users. Depending on scope, dependency, and methodology, several distinct XAI variations and examples exist.
 
