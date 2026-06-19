@@ -51,3 +51,16 @@ These specialized tools are tailored to extract intuitive explanations from spec
 | :--- | :--- | :--- | :--- | :--- |
 | [**Computer Vision (Image-Based)**](docs/computer_vision_image_based.md) | Highlighting spatial regions within an image that triggered a neural network's classification. | 1. **Grad-CAM (Gradient-weighted Class Activation Mapping)** generates a thermal heatmap over a chest X-ray image, highlighting the exact lung tissue regions that caused the AI to diagnose pneumonia.<br>2. **Saliency Maps** highlighting specific pixels that an autonomous vehicle's object-detection system focused on to identify a pedestrian crossing the street. | 2013 | [Deep Inside Convolutional Networks: Visualising Image Classification Models and Saliency Maps](https://arxiv.org/abs/1312.6034) |
 | [**Natural Language Processing (Text-Based)**](docs/natural_language_processing_text_based.md) | Identifying key words or structural phrases that dictated an NLP model's final output. | 1. **Attention Rollout** visualizing **Attention Weights** in a transformer-based customer feedback tool to highlight which adjectives (e.g., "frustrating", "broken") caused a support ticket to be flagged as high-priority negative sentiment.<br>2. **Counterfactual Explanations** for an automated resume-screening tool telling an applicant: "If your resume had contained the keyword 'Python' instead of 'General Programming', your profile would have passed the initial automated screening filter." | 2017 | [Counterfactual Explanations Without Opening the Black Box: Automated Decisions and the GDPR](https://arxiv.org/abs/1711.00399) |
+
+---
+
+##  Star History
+<div align="center">
+<a href="https://www.star-history.com/?repos=ishandutta2007%2FAwesome-Explainable-AI&type=date&legend=bottom-right">
+<picture>
+<source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=ishandutta2007/Awesome-Explainable-AI&type=date&theme=dark&legend=bottom-right" />
+<source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=ishandutta2007/Awesome-Explainable-AI&type=date&legend=bottom-right" />
+<img alt="Star History Chart" src="https://api.star-history.com/chart?repos=ishandutta2007/Awesome-Explainable-AI&type=date&legend=bottom-right" />
+</picture>
+</a>
+</div>
